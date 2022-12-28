@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face{
+    font-family: Caveat;
+    src: url(../fonts/Caveat/Caveat-Regular.ttf);
+}
+.barraSuperior{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+    padding: 15px;
+    background: rgb(126,127,128);
+    background: linear-gradient(0deg, rgba(126,127,128,1) 20%, rgba(246,3,3,1) 97%);
+    margin: 0;
+}
+@media(max-width:576px){
+    .barraSuperior > p {
+        display: none;
+    }
+    .barraSuperior{
+        height: 450px;
+    }
+    .barraSuperior > a > img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 50px;
+    }
+}
+.navegadorPagina .fa-bars{
+    display: none;
+}
+.navegadorPagina{
+    width: 100%;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+.navegadorPagina > ul{
+    list-style-type: none;
+}
+.navegadorPagina > ul > li{
+    display: inline-block;
+    position: relative;
+}
+.navegadorPagina > ul > li > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 20px;
+}
+.navegadorPagina > ul > li > ul{
+    display: none;
+    top: 40px;
+    list-style-type: none;
+    background-color: gray;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+}
+.navegadorPagina > ul >li:hover ul{
+    display: block;
+}
+.navegadorPagina > ul > li > ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+@media(max-width:576px){
+    .navegadorPagina{
+        justify-content: space-between;
+        position: absolute;
+    }
+    .navegadorPagina > .fa-bars{
+        display: block;
+        color: white;
+        font-size: 40px;
+        padding: 30px;
+    }
+    .navegadorPagina > .fa-bars:hover + ul {
+        left: 0;
+    }
+    .navegadorPagina > ul{
+        position: fixed;
+        flex-direction: column;
+        background-color: gray;
+        width: 200px;
+        height: 75vh;
+        justify-content: start;
+        padding-top: 60px;
+        align-items: center;
+        left: -300px;
+        transition: 0.4s;
+    }
+    .navegadorPagina > ul:hover{
+        left: 0;
+    }
+}
+.barraInferior{
+    padding: 10px;
+    background-color: red;
+    overflow: hidden;
+    margin: 0;
+    line-height: 30px;
+}
+textarea{
+    width: 400px;
+    padding: 110px;
+}
+h1{
+    padding: 20px;
+    color: gray;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Poppins;
+}
+p{
+    padding: 5px;
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Poppins;
+}
+.nombreEmpresa{
+    font-family: Caveat;
+    font-weight: 100px;
+    font-size: 80px;
+    padding: 50px;
+}
+
+/*Inicio*/
+.imgPortada{
+    background-image: url(../img/modelo_masculino.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2{
+    font-size: 50px;
+}
+.portada{
+    width: 500px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.portada__titulo{
+    margin: 8px;
+    color: red;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 160px;
+}
+.portada__img{
+    width: 100%;
+}
+.portada__descripcion{
+    margin: 20px;
+    padding: 15px;
+}
+
+/*Productos*/
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+.tarjetaHijo1{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo2{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo3{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo4{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo5{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo6{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo7{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjetaHijo8{
+    width: 400px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.tarjeta__img{
+    width: 100%;
+}
+.tarjeta__titulo{
+    margin: 8px;
+}
+.tarjeta__descripcion{
+    margin: 8px;
+}
+.btn{
+    display: block;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    margin: 16px;
+    font-family: Poppins;
+    border: none;
+    border-radius: 3px;
+    background-color: gray;
+    color: black
+}
+
+/*Promociones*/
+.cajasPromociones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 5px;
+    grid-template-areas: "main1 main2"
+                         "main1 main2"
+                         "aside aside"
+                         "aside aside";
+}
+.promociones{
+    grid-area: main1;
+    background-color: gray;
+    width: 65%;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.promociones__titulo{
+    margin: 8px;
+    color: red;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 210px;
+}
+.promociones__img{
+    width: 100%;
+}
+.promociones__descripcion{
+    margin-left: 10%;
+}
+.promociones2{
+    grid-area: main2;
+    background-color: gray;
+    width: 65%;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.promociones__titulo2{
+    margin: 8px;
+    color: red;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 210px;
+}
+.promociones__img2{
+    width: 100%;
+}
+.promociones__descripcion2{
+    margin-left: 10%;
+}
+.promociones3{
+    grid-area: aside;
+    width: 60%;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.promociones__titulo3{
+    margin: 5px;
+    color: red;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 50px;
+}
+.promociones__img3{
+    width: 100%;
+}
+.promociones__descripcion3{
+    margin-left: 10%;
+}
+
+
+/*Locales*/
+.mapa{
+    padding: 20px;
+    margin: 20px;
+}
+.mapa__img{
+    width: 100%;
+}
+.mapa__nombre{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.mapa__horarios{
+    margin: 10px;
+}
+
+/*Contacto*/
+.cuadroContacto{
+    width: 350px;
+    padding: 15px;
+    margin: 15px;
+    font-style: normal;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif
+}
